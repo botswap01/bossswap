@@ -170,7 +170,7 @@ client.on("messageCreate", async (message) => {
    !message.member.permissions.has("Administrator") &&
    !message.member.permissions.has("ManageChannels")
  ) {
-   return channel.send("❌ คุณไม่มีสิทธิ์อัปเดตเวลาบอส");
+   return
  }
  
     const args = message.content.trim().split(" ");
